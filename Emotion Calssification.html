@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emotion Classification</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      nav {
+        background-color: #2c2c74;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+      }
+
+      .nav-left {
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .nav-right {
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-right a,
+      .dropdown {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 16px;
+        position: relative;
+        cursor: pointer;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        top: 35px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        border-radius: 4px;
+      }
+
+      .dropdown-content a {
+        color: #2c2c74;
+        padding: 10px 15px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 30px;
+        color: #2c2c74;
+      }
+
+      /* ✅ Your Styles3.css integrated here */
+      fieldset {
+        margin: 20px auto;
+        width: fit-content;
+        border: 3px solid green;
+        padding: 15px;
+        border-radius: 20px;
+      }
+
+      legend {
+        font-weight: bold;
+        color: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">Emotion Detector</div>
+      <div class="nav-right">
+        <a href="#" onclick="return false;">Home</a>
+
+        <div class="dropdown">
+          Upload ▾
+          <div class="dropdown-content">
+            <a href="livevideo.html">Live Video</a>
+            <a href="audio.html">Audio</a>
+          </div>
+        </div>
+
+        <a href="#">Logout</a>
+      </div>
+    </nav>
+
+    <h1>Emotion Classification Using Deep Learning</h1>
+
+    <fieldset>
+      <legend>Disgust</legend>
+      <img src="Disgust.jpg" alt="Image not found" height="400" width="400" />
+    </fieldset>
+    <fieldset>
+      <legend>Fear</legend>
+      <img src="fear.jpg" alt="Image not found" height="400" width="400" />
+    </fieldset>
+    <fieldset>
+      <legend>Happy</legend>
+      <img src="Happy.jpg" alt="Image not found" height="400" width="400" />
+    </fieldset>
+    <fieldset>
+      <legend>Angry</legend>
+      <img src="Angry.jpg" alt="Image not found" height="400" width="400" />
+    </fieldset>
+  </body>
+</html>
